@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>{% block title %}{% endblock title %}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+       <!-- Vendor CSS Files -->
+        <link href="{{ get_url(path="vendor/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
+        <link href="{{ get_url(path="vendor/icofont/icofont.min.css") }}" rel="stylesheet">
+        <link href="{{ get_url(path="vendor/aos/aos.css") }}" rel="stylesheet">
+        <link href="{{ get_url(path="vendor/line-awesome/css/line-awesome.min.css") }}" rel="stylesheet">
+        <link href="{{ get_url(path="vendor/owl.carousel/assets/owl.carousel.min.css") }}" rel="stylesheet">
+        <!-- Template Main CSS File -->
+        <link href=" {{ get_url(path="css/style.css") }}" rel=" stylesheet" type="text/css">
+    </head>
+    <body>
+          <!-- ======= Mobile Menu ======= -->
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+            <div class="site-mobile-menu-close mt-3">
+                <span class="icofont-close js-menu-toggle"></span>
+            </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+
+        <!-- ======= Header ======= -->
+        <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+            <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-6 col-lg-2">
+                <h1 class="mb-0 site-logo"><a href="/" class="mb-0">Gruntwork.io</a></h1>
+                </div>
+                <div class="col-12 col-md-10 d-none d-lg-block">
+                <nav class="site-navigation position-relative text-right" role="navigation">
+                    <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                    <li class="active"><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/how-it-works" class="nav-link">How it works</a></li>
+                    <li><a href="/products" class="nav-link">Products</a>
+                    </li>
+                    <li><a href="/contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                </div>
+
+                <div class="col-6 d-inline-block d-lg-none ml-md-0 py-3" style="position: relative; top: 3px;">
+
+                <a href="#" class="burger site-menu-toggle js-menu-toggle" data-toggle="collapse" data-target="#main-navbar">
+                    <span></span>
+                </a>
+                </div>
+
+            </div>
+            </div>
+        </header>
+            <main>
+                    {% block content %}{% endblock content %}
+            </main>
+            <section class="section cta-section" >
+                <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-md-6 mr-auto text-center text-md-left mb-5 mb-md-0">
+                      <h2>Starts Publishing Your Apps</h2>
+                    </div>
+                    <div class="col-md-5 text-center text-md-right">
+                      <p><a href="#" class="btn"><span class="icofont-brand-apple mr-3"></span>App store</a> <a href="#" class="btn"><span class="icofont-ui-play mr-3"></span>Google play</a></p>
+                    </div>
+                  </div>
+                </div>
+              </section><!-- End CTA Section -->
+          
+            </main><!-- End #main -->
+          
+            <!-- ======= Footer ======= -->
+            <footer class="footer" role="contentinfo">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-7 ml-auto">
+                    <div class="row site-section pt-0">
+                      <div class="col-md-4 mb-4 mb-md-0">
+                        <h3>Navigation</h3>
+                        <ul class="list-unstyled">
+                          <li><a href="/how-it-works">How it works</a></li>
+                          <li><a href="/products">Products</a></li>
+                          <li><a href="">Contact</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-md-4 mb-4 mb-md-0">
+                        <h3>Services</h3>
+                        <ul class="list-unstyled">
+                          <li><a href="#">Team</a></li>
+                          <li><a href="#">Collaboration</a></li>
+                          <li><a href="#">Todos</a></li>
+                          <li><a href="#">Events</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>          
+              </div>
+            </footer>
+        <!-- Vendor JS Files -->
+        <script src="{{ get_url(path="vendor/jquery/jquery.min.js") }}"></script>
+        <script src="{{ get_url(path="vendor/bootstrap/js/bootstrap.bundle.min.js") }}"></script>
+        <script src="{{ get_url(path="vendor/jquery.easing/jquery.easing.min.js") }}"></script>
+        <script src="{{ get_url(path="vendor/php-email-form/validate.js") }}"></script>
+        <script src="{{ get_url(path="vendor/aos/aos.js") }}"></script>
+        <script src="{{ get_url(path="vendor/owl.carousel/owl.carousel.min.js") }}"></script>
+        <script src="{{ get_url(path="vendor/jquery-sticky/jquery.sticky.js") }}"></script>
+
+        <!-- Template Main JS File -->
+        <script src="{{ get_url(path="js/main.js") }}"></script>
+    </body>
+</html>

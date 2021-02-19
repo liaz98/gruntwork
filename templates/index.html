@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Gruntwork | DevOps as a Service{% endblock title %}
+
+{% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section class="hero-section" id="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 hero-text-image">
+          <div class="row">
+            <div class="col-lg-7 text-center text-lg-left">
+              <h1 data-aos="fade-right">Promote Your App with SoftLand</h1>
+              <p class="mb-5" data-aos="fade-right" data-aos-delay="100">We get you runningon AWS & GCP with Kubernetesand you get 100% of the code.</p>
+              <p data-aos="fade-right" data-aos-delay="200" data-aos-offset="-500"><a href="/products" class="btn btn-outline-white">Get started</a></p>
+            </div>
+            <div class="col-lg-5 iphone-wrap">
+              <img src="{{ get_url(path="img/phone_1.png")}}" alt="Image" class="phone-1" data-aos="fade-right">
+              <img src="{{ get_url(path="img/phone_2.png")}}" alt="Image" class="phone-2" data-aos="fade-right" data-aos-delay="200">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+{% endblock content %}
